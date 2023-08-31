@@ -6,8 +6,6 @@ require('express-async-errors')
 
 
 
-
-
 app.use(express.json())
 
 const connectDB = require('./db/connect')
@@ -28,12 +26,15 @@ app.use(errorHandlerMiddleware)
 
 
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000
+const server = app.listen(PORT, () => console.log(`💬 server on port ${PORT}`))
+
+const io = require('socket.io')(server)
+
 
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URI);
-    app.listen(port, () => console.log(`Server is listening port ${port}...`));
   } catch (error) {
     console.log(error);
   }
@@ -41,15 +42,7 @@ const start = async () => {
 
 start();
 
-const PORT = process.env.PORT || 4000
-const server = app.listen(PORT, () => console.log(`💬 server on port ${PORT}`))
-
-const io = require('socket.io')(server)
-
-
-
-
-
+ 
 let socketsConected = new Set()
 
 io.on('connection', onConnected)
