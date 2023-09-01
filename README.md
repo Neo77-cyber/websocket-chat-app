@@ -1,51 +1,61 @@
-# Chat app 💬 using websockets (Nodejs, Express & Socket.io)
+# WebSocket Chat App
 
-We are going to develop a chat application using Express, Websockets. Tough you can use plain websockets but we would be using a library called Socket.io - which is wrapper around Websockets, its super easy to use and provies a fallback to xhr requests until the websocket connection is established.
+## Introduction
 
-The frontend-ui is based on Flexbox, no external UI libraries are used, so you can modify it as per your liking.
+This chat application allows users to engage in real-time chat conversations using WebSocket technology.
 
----
+## Table of Contents
 
-## What is Websocket ?
+1. [Getting Started](#getting-started)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
 
-WebSockets are an alternative to HTTP communication in Web Application, they offer full-duplex communication, that is, it is, bi-directional and that means the data can flow in both ways, so it can flow from client to the server and also from server to the client.
 
----
+## Getting Started
 
-## To start setting up the project
+### Prerequisites
 
-Step 1: Clone the repo
+Before you begin, ensure you have met the following requirements:
 
-```bash
-git clone https://github.com/trulymittal/chat-socket.io.git
-```
+- Node.js and npm installed
+- A modern web browser
+- Access to a terminal or command prompt
 
-Step 2: cd into the cloned repo and run:
+### Installation
 
-```bash
-npm install
-```
+To install the WebSocket Chat App, follow these steps:
 
-Step 3: Start the chat app (development mode)
+1. Clone the repository to your local machine:
 
-```bash
-npm run dev
-```
+   ```shell
+   git clone https://github.com/your-username/websocket-chat-app.git
+   
+2. Navigate to the project directory:
+   cd websocket-chat-app
+   
+4. Install the required dependencies:
+   npm install
 
-Step 4: Start the chat app
+### Features
 
-```bash
+- Real-time chat functionality
+- Multiple users can join the chat room simultaneously
+- WebSocket technology for instant message delivery
+- Simple and intuitive user interface
+- Customizable chat room settings
+
+### Usage
+
+- To run the WebSocket Chat App, use the following command:
 npm start
-```
 
-## Author
+This will start the development server, and you can access the chat app in your web browser at http://localhost:4000.
 
-- [**Truly Mittal**](https://trulymittal.com)
+### How to Use
 
-## Contribute
+Open the web browser and navigate to http://localhost:4000.
+Enter your username and join the chat room.
+Start sending messages and enjoy real-time chat!
 
-You can fork this repo and send me a PR.
 
-## License
-
-This project is licensed under the MIT License.
