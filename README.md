@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This chat application allows users to engage in real-time chat conversations using WebSocket technology.
+This chat application allows users to engage in real-time chat conversations using nodeJS, Express JS, WebSocket technology.
 
 ## Table of Contents
 
