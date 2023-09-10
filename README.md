@@ -3,7 +3,7 @@
 ## Introduction
 
 This chat application allows users to engage in real-time chat conversations using nodeJS, Express JS, WebSocket technology.
-**Note: The application is live and deployed. You can access the live versions of the web app using this link: [Live Demo](https://chat-app-d2pt.onrender.com/)
+The application is live and deployed. You can access the live versions of the web app using this link: [Live Demo](https://chat-app-d2pt.onrender.com/)
 
 ## Table of Contents
 
